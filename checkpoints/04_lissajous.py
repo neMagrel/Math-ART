@@ -249,8 +249,8 @@ while running:
 
     time_value += dt * speed
 
-    x = CENTER_X + math.cos(time_value) * 250
-    y = CENTER_Y + math.sin(time_value) * 250
+    x = CENTER_X + math.sin(a * time_value) * radius_x
+    y = CENTER_Y + math.sin(b * time_value) * radius_y
 
     pygame.draw.circle(
         trail_surface,
