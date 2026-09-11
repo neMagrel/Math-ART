@@ -247,13 +247,15 @@ while running:
     # КОД УЧЕНИКА
     # ============================================================
 
-    x = CENTER_X
-    y = CENTER_Y
+    time_value += dt * speed
+
+    x = CENTER_X + math.cos(time_value) * 250
+    y = CENTER_Y + math.sin(time_value) * 250
 
     pygame.draw.circle(
         trail_surface,
         (255, 255, 255),
-        (x, y),
+        (int(x), int(y)),
         point_radius,
     )
 
@@ -274,3 +276,4 @@ while running:
             recorded_frames = []
 
 pygame.quit()
+
