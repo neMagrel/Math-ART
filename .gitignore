@@ -8,3 +8,4 @@ venv/
 
 output/*
 !output/.gitkeep
+PROJECT_AUDIT.md
